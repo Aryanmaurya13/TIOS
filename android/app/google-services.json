@@ -1,37 +1,45 @@
 {
   "project_info": {
-    "project_number": "914262169818",
-    "project_id": "chatmate-4485a",
-    "storage_bucket": "chatmate-4485a.appspot.com"
+    "project_number": "772435422035",
+    "project_id": "chatmate-d0c9f",
+    "storage_bucket": "chatmate-d0c9f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:914262169818:android:556a58c8f8a8ff7b08ade3",
+        "mobilesdk_app_id": "1:772435422035:android:8664881ac38df0bb2e0fa6",
         "android_client_info": {
           "package_name": "com.example.chatapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "914262169818-v837b36hd47fa3s2gi61cnj1tbt7qb3q.apps.googleusercontent.com",
+          "client_id": "772435422035-v32offpjg295p0c96ko1h06cpk0sv4mt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chatapp",
+            "certificate_hash": "ea8337c3fc700ec1f163906db28cc2d030fa42da"
+          }
+        },
+        {
+          "client_id": "772435422035-qnn2lsmhd9q7vp9657jb4h8pf1end8e8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA7rpMVRPp3ZMaGpy6Vp-GguAzmaZhsoSo"
+          "current_key": "AIzaSyDBvgm40a7UcWHxYaZLGo7B5TDyxRMiALs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "914262169818-v837b36hd47fa3s2gi61cnj1tbt7qb3q.apps.googleusercontent.com",
+              "client_id": "772435422035-qnn2lsmhd9q7vp9657jb4h8pf1end8e8.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "914262169818-vln69h6m8fpevaiqi64cpnc0ms3lp0h8.apps.googleusercontent.com",
+              "client_id": "772435422035-h5rc765ufjke7dndt7r5020d27cfkvnf.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
                 "bundle_id": "com.example.chatapp"

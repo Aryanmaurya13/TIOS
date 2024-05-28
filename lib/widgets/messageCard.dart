@@ -1,15 +1,14 @@
 import 'dart:developer';
 
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_tts/flutter_tts.dart';
 import 'package:gallery_saver/gallery_saver.dart';
-
 import '../Helper/Mydatautils.dart';
-
 import '../api/api.dart';
 import '../helper/dialogs.dart';
-import '../main.dart';
 import '../models/message.dart';
 
 // for showing single message details
@@ -23,6 +22,13 @@ class MessageCard extends StatefulWidget {
 }
 
 class _MessageCardState extends State<MessageCard> {
+  //TextToSpeech tts = TextToSpeech();
+  FlutterTts flutterTts = FlutterTts();
+  @override
+  void initState() {
+    configureTts();
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     bool isMe = Api.user.uid == widget.message.fromId;
@@ -31,6 +37,12 @@ class _MessageCardState extends State<MessageCard> {
           _showBottomSheet(isMe);
         },
         child: isMe ? _greenMessage() : _blueMessage());
+  }
+  Future<void> configureTts() async {
+    await flutterTts.setLanguage('en-US');
+    await flutterTts.setSpeechRate(0.3);
+    await flutterTts.setVolume(2.0);
+    //await flutterTts.setVoice({"name": "Karen", "locale": "en-AU"});
   }
 
   // sender or another user message
@@ -84,12 +96,20 @@ class _MessageCardState extends State<MessageCard> {
         ),
 
         //message time
-        Padding(
-          padding: EdgeInsets.only(right: MediaQuery.of(context).size.width * .04),
-          child: Text(
-            MyDateUtil.getFormattedTime(
-                context: context, time: widget.message.sent),
-            style: const TextStyle(fontSize: 13, color: Colors.black54),
+        GestureDetector(
+          onTap: () async {
+           print("clicked");
+           await flutterTts.speak(widget.message.msg);
+            //tts.speak("hello");
+          },
+          child: Padding(
+            padding: EdgeInsets.only(right: MediaQuery.of(context).size.width * .04),
+            child: Icon(Icons.play_arrow)
+            // Text(
+            //   MyDateUtil.getFormattedTime(
+            //       context: context, time: widget.message.sent),
+            //   style: const TextStyle(fontSize: 13, color: Colors.black54),
+            // ),
           ),
         ),
       ],
@@ -349,6 +369,7 @@ class _MessageCardState extends State<MessageCard> {
         ));
   }
 }
+
 
 //custom options card (for copy, edit, delete, etc.)
 class _OptionItem extends StatelessWidget {

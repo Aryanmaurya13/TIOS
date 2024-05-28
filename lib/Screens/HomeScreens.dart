@@ -1,19 +1,14 @@
 import 'dart:developer';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-
 import '../api/api.dart';
-
 import '../helper/dialogs.dart';
 import '../main.dart';
-
 import '../models/chatuser.dart';
 import '../widgets/ChatUserCard.dart';
-
 import 'ProfileScreen.dart';
 
 

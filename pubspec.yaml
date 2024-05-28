@@ -52,6 +52,7 @@ dependencies:
   gallery_saver: ^2.3.2
   flutter_notification_channel: ^2.0.0
   http: ^0.13.6
+  flutter_tts: 3.5.3
 
 
 dev_dependencies:

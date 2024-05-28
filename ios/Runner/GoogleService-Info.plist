@@ -2,18 +2,24 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CLIENT_ID</key>
+	<string>772435422035-h5rc765ufjke7dndt7r5020d27cfkvnf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.772435422035-h5rc765ufjke7dndt7r5020d27cfkvnf</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>772435422035-1vk54pb2of7l2gac32tshcaiifhn1sq0.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDlU-MDSBCKR7egV4Txc5qrAN6D4oJ4lnA</string>
+	<string>AIzaSyBWpYTKhFM4zR8gib_6GJ-y0A0rhP4BD70</string>
 	<key>GCM_SENDER_ID</key>
-	<string>914262169818</string>
+	<string>772435422035</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.example.chatapp</string>
 	<key>PROJECT_ID</key>
-	<string>chatmate-4485a</string>
+	<string>chatmate-d0c9f</string>
 	<key>STORAGE_BUCKET</key>
-	<string>chatmate-4485a.appspot.com</string>
+	<string>chatmate-d0c9f.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +31,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:914262169818:ios:4fe1f6b19eae43e208ade3</string>
+	<string>1:772435422035:ios:c460a4e18b4d9a462e0fa6</string>
 </dict>
 </plist>

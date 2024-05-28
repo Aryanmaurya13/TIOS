@@ -50,20 +50,22 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyA7rpMVRPp3ZMaGpy6Vp-GguAzmaZhsoSo',
-    appId: '1:914262169818:android:556a58c8f8a8ff7b08ade3',
-    messagingSenderId: '914262169818',
-    projectId: 'chatmate-4485a',
-    storageBucket: 'chatmate-4485a.appspot.com',
+    apiKey: 'AIzaSyDBvgm40a7UcWHxYaZLGo7B5TDyxRMiALs',
+    appId: '1:772435422035:android:8664881ac38df0bb2e0fa6',
+    messagingSenderId: '772435422035',
+    projectId: 'chatmate-d0c9f',
+    storageBucket: 'chatmate-d0c9f.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDlU-MDSBCKR7egV4Txc5qrAN6D4oJ4lnA',
-    appId: '1:914262169818:ios:4fe1f6b19eae43e208ade3',
-    messagingSenderId: '914262169818',
-    projectId: 'chatmate-4485a',
-    storageBucket: 'chatmate-4485a.appspot.com',
-    iosClientId: '914262169818-vln69h6m8fpevaiqi64cpnc0ms3lp0h8.apps.googleusercontent.com',
+    apiKey: 'AIzaSyBWpYTKhFM4zR8gib_6GJ-y0A0rhP4BD70',
+    appId: '1:772435422035:ios:c460a4e18b4d9a462e0fa6',
+    messagingSenderId: '772435422035',
+    projectId: 'chatmate-d0c9f',
+    storageBucket: 'chatmate-d0c9f.appspot.com',
+    androidClientId: '772435422035-1vk54pb2of7l2gac32tshcaiifhn1sq0.apps.googleusercontent.com',
+    iosClientId: '772435422035-h5rc765ufjke7dndt7r5020d27cfkvnf.apps.googleusercontent.com',
     iosBundleId: 'com.example.chatapp',
   );
+
 }
